@@ -1,0 +1,8 @@
+<nav class="uk-margin-top uk-navbar-nav">
+	{% for item in site.data.navigation %}
+		<a href="{{ item.link }}"
+		{% if page.url ==  item.link %}class="uk-active"{% endif %} >
+			{{ item.name }}
+		</a>
+	{% endfor %}
+  </nav>

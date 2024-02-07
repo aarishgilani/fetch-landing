@@ -1,0 +1,25 @@
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "authors"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
