@@ -10,7 +10,11 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'mono': 'IBM Plex Mono'
+      }
+    },
   },
   plugins: [],
 }
